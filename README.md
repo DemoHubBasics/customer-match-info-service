@@ -1,8 +1,12 @@
 # customer-match-info-service
 Microservice built on springboot to fetch licensed matches for given customer Id.
+
 Application uses noSql mongoDb as the database.
+
 Dockerized mongo express used as data service provider.
+
 Config to setup mongo express on your docker:
+
 put below yaml file to class path of the client service with docker running on your system.
 
 docker-compose.yaml
