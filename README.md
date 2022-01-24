@@ -43,3 +43,25 @@ docker-compose.yaml
 
 Application uses Netflix Eureka Service Discovery to avoid hardcoded urls for microservices.
 http://localhost:8085/getMatches/61ed92911ab48803cc89587c?summaryType=AvBTime    ---> Url to get liscensed matches 
+Expected Response from the service after successful transaction
+
+                {
+                    "userId": "61ed92911ab48803cc89587c",
+                    "customerName": "Alex",
+                    "matches": [
+                        {
+                            "id": "61ed8dbc1ab48803cc895870",
+                            "startDate": "2022-01-24T02:55:13.21",
+                            "playerA": "A",
+                            "playerB": "B",
+                            "summary": "Started 624 minutes ago."
+                        },
+                        {
+                            "id": "61ed8e591ab48803cc895872",
+                            "startDate": "2022-01-26T15:55:13.21",
+                            "playerA": "A",
+                            "playerB": "B",
+                            "summary": "Starts in 2 days."
+                        }
+                    ]
+                }
